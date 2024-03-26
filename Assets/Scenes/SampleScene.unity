@@ -204,7 +204,7 @@ MonoBehaviour:
     m_Bits: 64
   feetPos: {fileID: 1977633469}
   groundDistance: 0.25
-  jumpTime: 0.5
+  jumpTime: 0.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +710,7 @@ Transform:
   m_GameObject: {fileID: 1520077738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.78, y: -4, z: 0}
+  m_LocalPosition: {x: 4.73, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -733,7 +733,7 @@ MonoBehaviour:
   - {fileID: 8750663808615189681, guid: 01c472c8b5db74d6aba5083cd08050b8, type: 3}
   - {fileID: 6457828286224917857, guid: 79eefae59810f4040a4d5d4d202fb661, type: 3}
   obstacleSpawnTime: 2
-  obstacleSpeed: 1
+  obstacleSpeed: 6
 --- !u!1 &1977633468
 GameObject:
   m_ObjectHideFlags: 0
