@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 29080422}
   - component: {fileID: 29080423}
   - component: {fileID: 29080424}
+  - component: {fileID: 29080425}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -205,6 +206,18 @@ MonoBehaviour:
   feetPos: {fileID: 1977633469}
   groundDistance: 0.25
   jumpTime: 0.3
+--- !u!114 &29080425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29080421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb44ef14ac204235a16f0c4f6c3ae29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,8 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 8894679319468370180, guid: 06e808a31d4c747c4bcba7b004452c49, type: 3}
-  - {fileID: 8750663808615189681, guid: 01c472c8b5db74d6aba5083cd08050b8, type: 3}
   - {fileID: 6457828286224917857, guid: 79eefae59810f4040a4d5d4d202fb661, type: 3}
+  - {fileID: 8750663808615189681, guid: 01c472c8b5db74d6aba5083cd08050b8, type: 3}
   obstacleSpawnTime: 2
   obstacleSpeed: 6
 --- !u!1 &1977633468
