@@ -7,7 +7,7 @@ public class Scroller : MonoBehaviour
     Material material;
     Vector2 offset;
 
-    public int xVelocity, yVelocity;
+    public float xVelocity, yVelocity;
 
     private void Awake()
     {
@@ -17,14 +17,14 @@ public class Scroller : MonoBehaviour
 
     void Start()
     {
-        offset = new Vector2(xVelocity, yVelocity);
+        //offset = new Vector2(xVelocity, yVelocity);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        offset = new Vector2(xVelocity, yVelocity);
         material.mainTextureOffset += offset * Time.deltaTime;
 
     }
