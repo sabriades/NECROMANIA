@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 29080421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.9, y: -1.2, z: 0}
+  m_LocalPosition: {x: -5.98, y: -1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -613,11 +613,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 8894679319468370180, guid: 06e808a31d4c747c4bcba7b004452c49, type: 3}
-  - {fileID: 8794570429471750398, guid: 8be44f8923a2e4e8c966ae1f109c3dba, type: 3}
   - {fileID: 6457828286224917857, guid: 79eefae59810f4040a4d5d4d202fb661, type: 3}
   - {fileID: 8750663808615189681, guid: 01c472c8b5db74d6aba5083cd08050b8, type: 3}
+  - {fileID: 6371359973373683404, guid: 2e172e1dcbe734d8386d9451a7244119, type: 3}
   obstacleSpawnTime: 2
-  obstacleSpeed: 5
+  obstacleSpeed: 6
 --- !u!1 &1977633468
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +659,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 345024193597091181, guid: 31cbaf207d8474861b043b8f64670f31, type: 3}
       propertyPath: xVelocity
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4668160374916322808, guid: 31cbaf207d8474861b043b8f64670f31, type: 3}
       propertyPath: m_Name
