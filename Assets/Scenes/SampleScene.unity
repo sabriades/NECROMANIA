@@ -1284,6 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 742103582}
+  animator: {fileID: 742103579}
   jumpForce: 15
   groundLayer:
     serializedVersion: 2
