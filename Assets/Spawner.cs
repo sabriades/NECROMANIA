@@ -12,7 +12,11 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void Update()
     {
-        SpawnLoop();
+        if (GameManager.Instance.isPlaying)
+        {
+            SpawnLoop();
+        }
+
     }
 
     private void SpawnLoop()
