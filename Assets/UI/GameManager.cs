@@ -23,26 +23,41 @@ public class GameManager : MonoBehaviour
     public bool isPlaying = false;
 
     public UnityEvent onPlay = new UnityEvent();
+    public UnityEvent onGameOver = new UnityEvent();
+
+
 
     private void Update()
     {
-        if (isPlaying) {
-            currentScore += Time.deltaTime; 
+        if (isPlaying)
+        {
+            currentScore += Time.deltaTime;
         }
     }
 
-    public void StartGame() {
+    public void StartGame()
+    {
         onPlay.Invoke();
         isPlaying = true;
 
     }
 
-    public void GameOver() {
+    public void RestartGame()
+    {
+        onPlay.Invoke();
         currentScore = 0;
-        isPlaying = false; 
+        isPlaying = true;
     }
 
-    public string PrettyScore() {
+    public void GameOver()
+    {
+        onGameOver.Invoke();
+        currentScore = 0;
+        isPlaying = false;
+    }
+
+    public string PrettyScore()
+    {
         return Mathf.RoundToInt(currentScore).ToString();
 
 

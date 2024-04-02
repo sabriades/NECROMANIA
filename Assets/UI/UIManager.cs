@@ -1,23 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreUI;
-    [SerializeField] private GameObject startMenuUI; 
+    [SerializeField] private GameObject startMenuUI;
+    [SerializeField] private GameObject gameoverUI;
 
-    GameManager gm; 
+    GameManager gm;
     private void Start()
     {
         gm = GameManager.Instance;
-        
+        gm.onGameOver.AddListener(ActivateGameOverUI);
+
     }
 
     public void PlayButtonHandler() {
         gm.StartGame();
-        startMenuUI.SetActive(false);
+     
+
+    }
+
+
+    public void RestartButtonHandler()
+    {
+        gm.RestartGame();
+        gameoverUI.SetActive(false);
+    }
+
+    public void ActivateGameOverUI() {
+
+        gameoverUI.SetActive(true);
     }
 
     private void OnGUI()
