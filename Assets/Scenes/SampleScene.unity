@@ -948,7 +948,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: 0.55, z: 2}
-  m_LocalScale: {x: 22.172, y: 21.478, z: 1}
+  m_LocalScale: {x: 50, y: 21.478, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3921,7 +3921,7 @@ Transform:
   m_GameObject: {fileID: 1520077738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.77, y: -1.73, z: 1}
+  m_LocalPosition: {x: 12.93, y: -1.73, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3944,8 +3944,8 @@ MonoBehaviour:
   - {fileID: 5142955258019612669, guid: a3c2e8d48a4ff416391229b56558450f, type: 3}
   - {fileID: 7634430007110226763, guid: 7f6f492cb49374dbb95c24b9b26f1f3d, type: 3}
   obstacleParent: {fileID: 464510848}
-  obstacleSpawnTime: 2
-  obstacleSpeed: 6
+  obstacleSpawnTime: 1.5
+  obstacleSpeed: 8
 --- !u!1 &1553758370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,7 +4711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.4650879, y: 0.3619995}
+  m_AnchoredPosition: {x: -0.4650879, y: 0.36206055}
   m_SizeDelta: {x: 104.441, y: 233.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832841400
