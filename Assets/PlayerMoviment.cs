@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMoviment : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Animator animator; // Aggiunto Animator
+    [SerializeField] private Animator animator;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform feetPos;
@@ -18,16 +18,19 @@ public class PlayerMoviment : MonoBehaviour
 
     private void Update()
     {
+        // Controllo se il giocatore è a terra
         isGrounded = Physics2D.OverlapCircle(feetPos.position, groundDistance, groundLayer);
 
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        // Controllo del salto tramite input
+        if (isGrounded && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             isJumping = true;
             rb.velocity = Vector2.up * jumpForce;
-            animator.SetBool("IsJumping", true); // Imposta il parametro booleano "IsJumping" su true
+            animator.SetBool("IsJumping", true);
         }
 
-        if (isJumping && Input.GetButton("Jump"))
+        // Gestione del salto prolungato
+        if (isJumping && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary)
         {
             if (jumpTimer < jumpTime)
             {
@@ -37,15 +40,16 @@ public class PlayerMoviment : MonoBehaviour
             else
             {
                 isJumping = false;
-                animator.SetBool("IsJumping", false); // Imposta il parametro booleano "IsJumping" su false quando il salto è finito
+                animator.SetBool("IsJumping", false);
             }
         }
 
-        if (Input.GetButtonUp("Jump"))
+        // Interruzione del salto
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             isJumping = false;
             jumpTimer = 0;
-            animator.SetBool("IsJumping", false); // Imposta il parametro booleano "IsJumping" su false quando il salto è interrotto
+            animator.SetBool("IsJumping", false);
         }
     }
 }
