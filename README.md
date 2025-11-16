@@ -1,7 +1,7 @@
 # NECROMANIA
 
-2D endless runner game project developed in C# using Unity during my time at the Apple Developer Academy in two weeks.   
-NECROMANIA represents one of my most meaningful projects: fully designed, scripted and assembled by me.
+2D endless runner game developed in C# using Unity during my time at the Apple Developer Academy.   
+NECROMANIA represents one of my most meaningful projects: fully designed, scripted and assembled by me in about two weeks.
 
 ---
 
